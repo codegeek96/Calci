@@ -22,6 +22,8 @@ To run the command line calculator follow the steps given below:
 | Square Root             | -fsq          | --fsqrt   |
 | Power                   | -fpw          | --fpow    |
 | Logarithm10             | -fl           | --flog    |
+| Natural Logarithm       | -fnl          | --fnlog   |
+| Exponential             | -fe           | --fexp    |
 | Sine                    | -fsi          | --fsin    |
 | Cosine                  | -fco          | --fcos    |
 | Tangent                 | -fta          | --ftan    |

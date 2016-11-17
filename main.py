@@ -43,6 +43,14 @@ def power(a,b):
 "Performs base-10 logarithm"
 def log(a):
     return math.log10(a)
+    
+"Performs natural logarithm"
+def nlog(a):
+    return math.log(a)
+    
+"Performs exponential"
+def exp(a):
+    return math.exp(a)
 
 "Performs sine operation"
 def sin(a):
@@ -78,6 +86,8 @@ def main():
     group.add_argument("-fsq", "--fsqrt", help = "Performs square root", action = "store_true")
     group.add_argument("-fpw", "--fpow", help = "Performs power operation", action = "store_true")	
     group.add_argument("-fl", "--flog", help = "Performs base-10 logarithm", action = "store_true")
+    group.add_argument("-fnl", "--fnlog", help = "Performs natural logarithm", action = "store_true")
+    group.add_argument("-fe", "--fexp", help = "Performs exponential", action = "store_true")
     group.add_argument("-fsi", "--fsin", help = "Performs sine operation", action = "store_true")
     group.add_argument("-fco", "--fcos", help = "Performs cosine operation", action = "store_true")
     group.add_argument("-fta", "--ftan", help = "Performs tangent operation", action = "store_true")
@@ -108,6 +118,10 @@ def main():
         print("{} raised to the power {} results {}".format(args.num1,args.num2,(power(args.num1,args.num2))))
     elif args.flog:
         print("The base-10 logarithmic value of {} is {}".format(args.num1, (log(args.num1))))
+    elif args.fnlog:
+        print("The natural logarithmic value of {} is {}".format(args.num1, (nlog(args.num1))))
+    elif args.fexp:
+        print("The exponential value of {} is {}".format(args.num1, (exp(args.num1))))
     elif args.fsin:
         print("Sine of {} radians is {}".format(args.num1,(sin(args.num1))))
     elif args.fcos:

@@ -34,6 +34,14 @@ class TestCalci(unittest.TestCase):
 
     def test_logarithm(self):
         self.assertAlmostEqual(main.log(5), 0.6989700043360189, 'logarithm fail')
+        
+    def test_nlogarithm(self):
+        self.assertAlmostEqual(main.nlog(3), 1.0986122886681098,
+'natural logarithm fail')
+
+    def test_exp(self):
+        self.assertAlmostEqual(main.exp(2), 7.38905609893065,
+'exponential fail')
 
     def test_sine(self):
         self.assertAlmostEqual(main.sin(int(90)), float(1.0), 'sine fail')
